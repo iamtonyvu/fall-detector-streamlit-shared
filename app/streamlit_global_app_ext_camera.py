@@ -6,7 +6,7 @@ from PIL import Image
 
 
 st.set_page_config(page_title="Fall Detector with streamlit",
-                   page_icon='camera_icon'
+                   page_icon='camera_icon.png'
                    )
 st.header('Fall Detector - Model Explanation', divider='rainbow')
 
