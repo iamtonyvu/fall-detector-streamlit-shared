@@ -1,7 +1,10 @@
 
 opencv-python
-
 ultralytics
-
 streamlit
 streamlit_webrtc
+torch
+torchvision
+PyYAML
+tqdm
+dill
