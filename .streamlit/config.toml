@@ -1,0 +1,7 @@
+[theme]
+base = "light"
+primaryColor="#ff0000" # red
+backgroundColor="#0f1f4d" # black
+secondaryBackgroundColor="#696969" # dark gray
+textColor="#FFFFFF" # white
+font="Helvetica Neue"
