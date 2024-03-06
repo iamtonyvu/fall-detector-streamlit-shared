@@ -40,8 +40,8 @@ import click
 def cli(model_filename):
 
     st.set_page_config(page_title="Fall Detector with streamlit",
-                   page_icon='camera_icon.png',
-                   layout='wide'
+                   page_icon='camera_icon.png'
+                #    layout='wide'
                    )
     st.header('Fall Detector - Model Explanation', divider='rainbow')
 
