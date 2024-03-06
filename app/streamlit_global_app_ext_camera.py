@@ -62,8 +62,8 @@ def cli(model_filename):
 
     play_webcam(conf=conf, model=model)
 
-    col1, col2, col3 = st.columns((1, 5, 1))
-    # col1, col2 = st.columns((3, 6))
+    # col1, col2, col3 = st.columns((1, 5, 1))
+    col1, col2 = st.columns((3, 6))
 
     col2.write('<span style="color:red;background-color:#183b80;padding: 10px;font-size: 24px;">falling : red</span><span style="color:orange;background-color:#183b80;padding: 10px;font-size: 24px;">sitting : orange</span><span style="color:pink;background-color:#183b80;padding: 10px;font-size: 24px;">standing : pink</span>',
               unsafe_allow_html=True)
