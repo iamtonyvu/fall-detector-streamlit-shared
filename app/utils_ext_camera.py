@@ -19,7 +19,7 @@ def play_webcam(conf, model):
 
     def video_frame_callback(frame: av.VideoFrame) -> av.VideoFrame:
         try:
-            print("video_frame_callback")
+            #print("video_frame_callback")
 
             classNames = ["Fall", "Standing", "Sit"]
             classColor = [( 176, 58, 46 ), (46, 204, 113), (241, 196, 15)]

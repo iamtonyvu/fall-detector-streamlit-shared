@@ -10,7 +10,7 @@ from deepsparse import Pipeline
 
 
 @click.command()
-@click.option('--model-filename', default='best.pt')
+@click.option('--model-filename', default='best_background.onnx')
 def cli(model_filename):
 
     st.set_page_config(page_title="Fall Detector with streamlit",
