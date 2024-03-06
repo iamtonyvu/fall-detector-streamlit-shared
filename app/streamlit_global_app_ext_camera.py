@@ -4,6 +4,9 @@ from ultralytics import YOLO
 from utils_ext_camera import play_webcam
 from PIL import Image
 import click
+from deepsparse import Pipeline
+
+
 
 
 @click.command()
@@ -18,7 +21,11 @@ def cli(model_filename):
 
     # Display the title image
     print(model_filename)
-    model = YOLO(model_filename)
+    # Set up the DeepSparse Pipeline
+    yolo_pipeline = Pipeline.create(
+    task="yolov8",
+    model_path=model_filename
+)
 
     st.subheader(':camera: Live camera')
 
@@ -31,7 +38,7 @@ def cli(model_filename):
         st.write(f'Selected: {conf}')
 
 
-    play_webcam(conf=conf, model=model)
+    play_webcam(conf=conf, model=yolo_pipeline)
 
     col1, col2, col3 = st.columns((1, 5, 1))
     # col1, col2 = st.columns((3, 6))
