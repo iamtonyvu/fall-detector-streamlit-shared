@@ -41,7 +41,6 @@ def cli(model_filename):
 
     st.set_page_config(page_title="Fall Detector with streamlit",
                    page_icon='camera_icon.png'
-                #    layout='wide'
                    )
     st.header('Fall Detector - Model Explanation', divider='rainbow')
 
@@ -55,7 +54,7 @@ def cli(model_filename):
         conf = st.slider(label='Confidence threshold',
                         min_value=0.0,
                         max_value=1.0,
-                        value=0.5,
+                        value=0.65
                         )
         st.write(f'Selected: {conf}')
 
