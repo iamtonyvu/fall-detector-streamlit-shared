@@ -8,4 +8,4 @@ torchvision
 PyYAML
 tqdm
 dill
-deepsparse[yolov8]
+deepsparse[yolov8]==1.6.1
